@@ -81,8 +81,8 @@ with st.sidebar:
     st.write("### **Ayush Trivedi**")
     st.caption("Data Analyst @ NielsenIQ | AI Enthusiast")
     st.divider()
-    st.link_button("🔗 LinkedIn Profile", "https://linkedin.com/in/YOUR_LINK", use_container_width=True)
-    st.link_button("💻 GitHub Portfolio", "https://github.com/YOUR_USER", use_container_width=True)
+    st.link_button("🔗 LinkedIn Profile", "https://linkedin.com/in/ayush-trivedi-", use_container_width=True)
+    st.link_button("💻 GitHub Portfolio", "https://github.com/Ayush-trivedi-18", use_container_width=True)
     st.divider()
     st.caption("GuruGPT v5.0 | Powered by Groq")
 
@@ -141,4 +141,5 @@ if st.session_state.messages and st.session_state.messages[-1]["role"] == "user"
             placeholder.markdown(full_res)
             st.session_state.messages.append({"role": "assistant", "content": full_res})
         except Exception as e:
+
             st.error(f"Error: {e}")
